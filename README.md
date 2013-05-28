@@ -2,6 +2,27 @@
 
 A quick little library that I put together for other projects. It's really just a wrapper for FtpWebRequest with a friendlier interface.
 
+
+#### Quick Example
+```cs
+string[] dirs;
+List<FtpFile> files;
+
+using( var con = new FtpConnection( "ftp.somehost.com", 22, "username", "password", true ) ) {
+    string path = "/some/folder/location/";
+    if( con.FtpItemExists( path, FtpItemType.Folder ) ) {
+        dirs = con.SimpleDirectoryList( path );
+        files = con.FileList( path );
+    }
+    
+    foreach( var file in files ) {
+        // Download each file and save it to the current
+        // path with the same name.
+        con.DownloadFile( file, file.Name )
+    }
+}
+```
+
 ### License
 ftplib is released under a BSD 3-Clause License
 
