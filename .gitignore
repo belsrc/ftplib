@@ -34,7 +34,7 @@
 .builds
 [Dd]ebug/
 [Oo]bj
-[Rr]elease/.phb
+[Rr]elease/*.phb
 _UpgradeReport_Files/
 ~$*
 Backup*/
