@@ -32,7 +32,6 @@
 *_i.c
 *_p.c
 .builds
-
 [Dd]ebug/
 [Oo]bj
 [Rr]elease/.phb
@@ -41,9 +40,7 @@ _UpgradeReport_Files/
 Backup*/
 ClientBin
 Desktop.ini
-ftpdocs/Help/*.aspx
-ftpdocs/Help/*.config
-ftpdocs/Help/*.php
+ftpdocs/
 sql
 stylecop.*
 TestResults
