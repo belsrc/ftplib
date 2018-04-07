@@ -1,3 +1,5 @@
+[![No Maintenance Intended](https://img.shields.io/badge/No%20Maintenance%20Intended-x-red.svg?style=flat-square&longCache=true)](http://unmaintained.tech/)
+
 # ftplib
 
 A quick little library that I put together for other projects. It's really just a wrapper for FtpWebRequest with a friendlier interface.
